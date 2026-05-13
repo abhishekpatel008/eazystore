@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage with React</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="root">
+        <script src="./react-lib/react.development.js"></script>
+        <script src="./react-lib/react-dom.development.js"></script>
+        <script>
+            // Generate random number between 1 to 100
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+            // Create a number element
+            const numberElement = React.createElement("h1", null, `Generated Number: ${randomNumber}`);
+            const resultElement = React.createElement("h2", null, randomNumber % 2 === 0 ? "The number is Even!" : "The Number is Odd!");
+
+            const root = ReactDOM.createRoot(document.getElementById("root"));
+            root.render([numberElement, resultElement]);
+
+        </script>
+</body>
+
+</html>

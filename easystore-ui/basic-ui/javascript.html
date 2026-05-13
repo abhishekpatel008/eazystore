@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage with JavaScript</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="root">
+        <script>
+            // Generate random number between 1 to 100
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+            // Create a number element
+            const numberElement = document.createElement("h1");
+            const resultElement = document.createElement("h2");
+            numberElement.innerHTML = `Generated Number: ${randomNumber}`;
+
+            if (randomNumber % 2 == 0) {
+                resultElement.innerHTML = "The number is even!";
+            }
+
+            else {
+                resultElement.innerHTML = "The number is odd!";
+            }
+
+            const root = document.getElementById("root"); // Whatever is the id in the div, the same goes here
+            root.appendChild(numberElement);
+            root.appendChild(resultElement);
+
+        </script>
+</body>
+
+</html>
