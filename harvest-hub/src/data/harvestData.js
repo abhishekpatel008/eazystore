@@ -6,7 +6,7 @@ export const harvestData = [
         description: "Pure, unpasteurized honey harvested from local wildflower fields.",
         price: 14.50,
         unit: "16 oz jar",
-        imageUrl: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=400&q=80"
+        imageUrl: "https://cdn.shopify.com/s/files/1/0262/6374/8713/files/organic-honey_1000x.png?v=1726646497"
     },
     {
         id: 2,
