@@ -3,15 +3,15 @@ import ProductCard from './ProductCard';
 
 export default function ProductListings({ productList }) {
   return (
-    <div className="product-listings-container">
-      <div className="product-listings-grid">
+    <div className="max-w-\[1152px\] mx-auto justify-stretch">
+      <div className="flex flex-wrap justify-items-center gap-x-6 gap-y-8 py-12">
         {productList && productList.length > 0 ? (
           productList.map((item) => (
             <ProductCard key={item.id} item={item} />
           )
           )
         ) : (
-          <p className="product-listings-empty">No harvest items found matching your search.</p>
+          <p className="text-center text-primary font-primary font-bold text-lg">No harvest items found matching your search.</p>
         )}
       </div>
     </div>
