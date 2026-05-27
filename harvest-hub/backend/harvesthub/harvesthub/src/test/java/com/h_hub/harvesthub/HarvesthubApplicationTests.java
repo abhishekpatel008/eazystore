@@ -1,10 +1,10 @@
-package com.eazybytes.eazystore;
+package com.h_hub.harvesthub;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EazystoreApplicationTests {
+class HarvesthubApplicationTests {
 
 	@Test
 	void contextLoads() {
